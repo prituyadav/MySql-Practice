@@ -1,0 +1,16 @@
+SHOW DATABASES;
+USE testdb;
+-- DROP TABLE studentfine; 
+CREATE TABLE studentfine(StudentID VARCHAR(255), Name VARCHAR(255), 
+LicenseNo VARCHAR(255), CarReg VARCHAR(255), ReceiptNo VARCHAR(255), 
+Date DATE, OffenceCode INT, FineRM DOUBLE);
+DESC studentfine;
+-- Ans A. 
+INSERT INTO studentfine VALUES 
+("F1011", "CK Fong", "P100", "JGK9201", "00-345", "10/03/06", 2, 30.00),
+("F1011", "CK Fong", "P100", "JGK9201", "00-690", "15/03/06", 1, 20.00),
+("F1011", "CK Fong", "P100", "JGK9201", "00-810", "20/03/06", 2, 30.00),
+("L782", "AdamJames", "P290", "JJL99", "00-459", "13/03/06", 1, 20.00),
+("H762", "MalaDewi", "P764", "JJK7654", "00-564", "12/03/06", 3, 40.00),
+("H762", "MalaDewi", "P764", "JJK7654", "00-770", "19/06/06", 2, 30.00);
+SELECT * FROM studentfine;
